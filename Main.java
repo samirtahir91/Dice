@@ -172,7 +172,7 @@ public class Main extends javax.swing.JFrame {
             score++;    // increment the score by 1.
             score++;    // increment the score by 1.
             jLabel3.setText("Score: " + score); // sets the score label to display the new score.
-            jLabel4.setText("Result: Winner!"); // sets the message label to display the win message.
+            jLabel4.setText("Result: You Win!"); // sets the message label to display the win message.
         } else if (1 <= comp && comp <= 6 && 1 <= user && user <= 6 && user < comp) // if both users and comp have valid dice face values of 1-6 and the user value is less than the comp value (if the users loses).
         {
             score--;    //reduce the score by 1.
@@ -191,9 +191,10 @@ public class Main extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
-
+				
             public void run() {
                 new Main().setVisible(true);
+					 
             }
         });
     }
